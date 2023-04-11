@@ -1,0 +1,124 @@
+:root {
+    --white: #fff;
+    --dark-blue: #13293d;
+    --orange: #dd9460;
+    --border-radius: 50px;
+  }
+  
+  body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    line-height: 1.5;
+  }
+  
+  h1 {
+    font-size: 250%;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 140%;
+    margin-bottom: 0px;
+  }
+
+  h4 {
+    color: #adadad;
+    font-weight: lighter;
+    font-size: 100%;
+  }
+
+  li {
+    margin-left: 30px;
+    padding: 0%;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    /* Refer to CSS values by the name of the custom property we assigned it */
+    background: var(--dark-blue);
+    color: var(--white);
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+  }
+  
+  nav a {
+    color: var(--dark-blue);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--dark-blue);
+    color: var(--white);
+    margin-top: auto;
+  }
+  
+  .my-portfolio {
+    flex: 1;
+    background-color: var(--white);
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .subsection {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    flex: 0 0 95%;
+    /* transform: rotate(8deg); */
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+  }
+  
+  .subsection > header {
+    /* This is the same as `border-radius: 50px 50px 0 0 */
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    padding: 20px;
+  }
+  
+  .subsection > p {
+    text-align: center;
+  }
+  
+  .subsection > img {
+    width: 400px;
+  }
+  
+  form {
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
