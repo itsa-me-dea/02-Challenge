@@ -2,8 +2,9 @@
     --white: #fff;
     --dark-blue: #13293d;
     --orange: #dd9460;
-    --border-radius: 50px;
   }
+  
+  /* --------------------- general --------------------- */
   
   body {
     font-size: 16px;
@@ -20,11 +21,18 @@
   }
   
   h2 {
-    font-size: 140%;
-    margin-bottom: 0px;
+    font-size: 130%;
+  }
+
+  h3 {
+    font-size: 110%;
   }
 
   h4 {
+    font-size: 100%;
+    font-weight: 200;
+  }
+  h5 {
     color: #adadad;
     font-weight: lighter;
     font-size: 100%;
@@ -32,26 +40,38 @@
 
   li {
     margin-left: 30px;
-    padding: 0%;
+    margin-left: 50px;
+    list-style: "👉 ";
   }
   
   header {
-    padding: 40px;
-    text-align: center;
-    /* Refer to CSS values by the name of the custom property we assigned it */
-    background: var(--dark-blue);
-    color: var(--white);
+    padding: 10px 10px 10px 0px;
+    background-size: 100%;
+    color: var(--dark-blue);
+    /* border-right: 7px solid #13293d;   */
   }
-  
+
+  /* --------------------- main top header --------------------- */
+  .top-header {
+    text-align: center;
+    color: var(--white);
+
+    background-image: url(./Images/chill-background.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  /* --------------------- nav bar --------------------- */
   nav {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--orange);
   }
-  
+
   nav a {
-    color: var(--dark-blue);
+    color: var(--white);
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
@@ -60,21 +80,13 @@
   nav a:hover {
     background-color: var(--white);
     color: var(--dark-blue);
+    font-weight: bolder;
   }
   
+  /* --------------------- sections --------------------- */
   main {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    text-align: center;
-    background: var(--dark-blue);
-    color: var(--white);
-    margin-top: auto;
   }
   
   .my-portfolio {
@@ -85,40 +97,131 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  
-  .subsection {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: var(--border-radius);
-    padding: 10px;
+
+  header:not(.top-header) {
+    font-size: 140%;
+    font-weight: 600;    
+    text-align: left;
+    margin-right: 20px;
+  }
+
+  section {
+    border-left: 7px solid #13293d;
+    padding-left: 20px;
+    margin: 40px;
+
     flex: 0 0 95%;
-    /* transform: rotate(8deg); */
-    box-shadow: 10px 10px 5px #aaaaaa;
-    margin: 20px;
+  }
+
+  /* --------------------- ABOUT ME --------------------- */
+  .about-me-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .subsection > header {
-    /* This is the same as `border-radius: 50px 50px 0 0 */
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  .about-me-sub img {
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+
+
+  .about-me-sub img {
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+
+  /* --------------------- MY WORK --------------------- */
+  .my-work-sub img {
+    margin: 10px 10px 10px 0px;
+    border-radius: 5%;
+  }
+
+  /* --------------------- MY RESUME --------------------- */
+
+  .my-resume-container {
+    display: flex;
+    align-items: top;
+    justify-content: left;
+  }
+
+  .my-resume-container article {
+    margin-right: 40px;
+  }
+
+  /* --------------------- CONTACT ME --------------------- */
+  form header {
+    margin-bottom: -10px;
+  }
+  
+  form p {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  button {
+    padding: 1% 2%;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #13293d;
+    border: none;
+    outline: none;
+  }
+  
+  .text-input {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .text-input, select {
+    padding: 1%;
+    outline: none;
+    border: 1.2px solid #b9C6ae;
+  }
+  
+  .text-input:hover, button:hover {
+    box-shadow: 0 0 5px #999;
+  }
+  
+  .text-input:focus {
+    border-right-width: 5px;
+  }
+  
+  .text-input:placeholder-shown {
+    border-style: dashed;
+  }
+
+
+  /* --------------------- footer --------------------- */
+  footer {
+    width: 100%;
+    bottom: 0;
     padding: 20px;
-  }
-  
-  .subsection > p {
     text-align: center;
+    background: var(--dark-blue);
+    color: var(--white);
+    margin-top: auto;
   }
-  
-  .subsection > img {
-    width: 400px;
-  }
-  
-  form {
-    
-  }
+
+  /* --------------------- responsive layout --------------------- */
   
   @media screen and (max-width: 768px) {
     main,
     nav {
       flex-direction: column;
     }
+
+    .about-me-sub, .my-resume-container {
+      flex-direction: column;
+    }
+
+    .about-me-sub p {
+      margin-top: 10px;
+      text-align: justify;
+    }
+
   }
   
