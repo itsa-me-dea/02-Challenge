@@ -132,11 +132,91 @@
   }
 
   /* --------------------- MY WORK --------------------- */
-  .my-work-sub img {
+  .my-work-child img {
     margin: 10px 10px 10px 0px;
     border-radius: 5%;
   }
 
+  /* Below was adapted from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+  .MWS-container {
+    position: relative;
+    /* width: 50%; */
+  }
+
+  .MWS-container p {
+    line-height: 1.25;
+  }
+  
+  .MWS-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 0 1% 1% 0;
+  }
+  
+  .MWS-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .MWS-container:hover .MWS-image {
+    opacity: 0.3;
+  }
+  
+  .MWS-container:hover .MWS-middle {
+    opacity: 1;
+  }
+  
+  .MWS-text {
+    background-color: var(--orange);
+    border-radius: 5%;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  /* Above was adapted from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+
+  #MWS-image-1 {
+    width: 100%;
+    max-width: 800px;
+    min-width: 700px;
+  }
+
+  #MWS-image-2 {
+    width: 50%;
+    max-width: 500px;
+    min-width: 450px;
+    display: block;
+  }
+
+  #MWS-image-3, #MWS-image-4 {
+    width: 49%;
+    max-width: 500px;
+    min-width: 350px;
+    display: inline-block;
+  }
+  
+  #MWS-image-5, #MWS-image-6, #MWS-image-7 {
+    width: 32%;
+    max-width: 300px;
+    min-width: 200px;
+    display: inline-block;
+  }
+  
+  .my-work-container {
+    display: flex;
+    align-items: top;
+    justify-content: left;
+  }
   /* --------------------- MY RESUME --------------------- */
 
   .my-resume-container {
@@ -149,7 +229,16 @@
     margin-right: 40px;
   }
 
+  .MRS-logo:hover {
+    opacity: 0.7;
+  }
+
   /* --------------------- CONTACT ME --------------------- */
+  #email-me {
+    color: #dd9460;
+    text-decoration: none;
+  }
+  
   form header {
     margin-bottom: -10px;
   }
@@ -169,6 +258,10 @@
     background-color: #13293d;
     border: none;
     outline: none;
+  }
+
+  button:hover {
+    opacity: 0.8;
   }
   
   .text-input {
@@ -194,7 +287,6 @@
     border-style: dashed;
   }
 
-
   /* --------------------- footer --------------------- */
   footer {
     width: 100%;
@@ -208,19 +300,33 @@
 
   /* --------------------- responsive layout --------------------- */
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 832px) {
     main,
     nav {
       flex-direction: column;
     }
 
-    .about-me-sub, .my-resume-container {
+    .about-me-sub, .my-resume-container, .my-work-container {
       flex-direction: column;
     }
 
     .about-me-sub p {
       margin-top: 10px;
       text-align: justify;
+    }
+
+    #MWS-image-3, #MWS-image-4 {
+      width: 49%;
+      max-width: 500px;
+      min-width: 350px;
+      display: inline-block;
+    }
+    
+    #MWS-image-5, #MWS-image-6, #MWS-image-7 {
+      width: 32%;
+      max-width: 300px;
+      min-width: 200px;
+      display: inline-block;
     }
 
   }

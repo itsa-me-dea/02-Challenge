@@ -36,7 +36,7 @@
         <article class="about-me-sub">
           <img id="my-pic" src="./assets/Images/my profile pic.jpg" alt="image of me with my chinchilla" width="400"/>
           <p>
-            My name is Nhadea Lensky. I am a nerd for anything STEM or gaming related. I am new to the code game, but so far my experience has only made me more excited to learn. Thus far, I have dabbled in HTML, CSS, and JavaScript. I have been exposed to Matlab and Python, but it has been <i>years</i> since I've touch that. I'm interested in pursuing more in computer science, but let's just see how this coding bootcamp goes. Cheers!
+            My name is Nhadea Lensky. I am a nerd for anything STEM or gaming related. I am new to the code game, but so far my experience has only made me more excited to learn. Thus far, I have dabbled in HTML, CSS, and JavaScript. I have been exposed to Matlab and Python, but it has been <i>years</i> since I've touched either of those. I'm interested in pursuing more in computer science, but let's just see how this coding bootcamp goes. Cheers!
             <br> <br>
             <b>Fun Fact:</b> I have two chinchillas. Zoe was kind enough to take a picture with me, but my boy Ollie was being rude. Good thing he's cute...
           </p>
@@ -47,41 +47,82 @@
       <!-- --------------------- My Work --------------------- -->
       <section class="my-work" id="my-work-nav">
         <header>My Work</header>
-
-        <article class="my-work-sub">
-          <h2>My Prework Study Guide</h2>
-          <a href="https://itsa-me-dea.github.io/prework-study-guide/"> <img src="./Assets/Images/itsa-me-dea.github.io_prework-study-guide_.png" width=500 alt="image of my prework study guide"></a>
-          <p>This was my first project. Completed under the guidance of my coding bootcamp pre-coursework and the power of Google.</p>
-        </article>
-
-        <br>
+        <div class="my-work-container">
+          <article class="my-work-child">
+            <h2>My Prework Study Guide</h2>
+            <div class="MWS-container" id="MWS-image-1">
+              <a href="https://itsa-me-dea.github.io/prework-study-guide/"> 
+                <img src="./Assets/Images/itsa-me-dea.github.io_prework-study-guide_.png" width=500 alt="image of my prework study guide" class="MWS-image">
+                <div class="MWS-middle">
+                  <p class="MWS-text">This was my first project. Completed under the guidance of my coding bootcamp pre-coursework and the power of Google.</p>
+                </div>
+              </a>
+            </div>         
+          </article>
   
-        <article class="my-work-sub">
-          <h2>My Portfolio</h2>
-          <a href="https://itsa-me-dea.github.io/prework-study-guide/"> <img src="./Assets/Images/itsa-me-dea.github.io_prework-study-guide_.png" width=500 alt="image of my portfolio"></a>
-          <p>Started Week 2 of my coding bootcamp.</p>
-        </article>
+          <article class="my-work-child">
+            <h2>My Portfolio</h2>
+            <div class="MWS-container" id="MWS-image-2">
+              <a href="#"> 
+                <img src="./Assets/Images/itsa-me-dea.github.io_prework-study-guide_.png" width=500 alt="image of my portfolio" class="MWS-image">
+                <div class="MWS-middle">
+                  <p class="MWS-text">Started the 2nd week of my coding bootcamp. Needs a little more TLC but it's a start.</p>
+                </div>
+              </a>
+            </div>         
+          </article>
 
-        <br>
-  
-        <article class="my-work-sub">
-          <h2>Future Work</h2>
-          <a href="https://discord.com/"> <img src="./Assets/Images/discord-logo.png" width=300 alt="image of my portfolio"></a>
-  
-          <a href="https://store.steampowered.com/"> <img src="./Assets/Images/steam-logo.png" width=300 alt="image of my portfolio"></a>
-          
           <br>
-          
-          <a href="https://www.xbox.com/en-us/"> <img src="./Assets/Images/xbox-logo.png" width=200 alt="image of my portfolio"></a>
   
-          <a href="https://www.playstation.com/en-us/"> <img src="./Assets/Images/playstation-logo.png" width=200 alt="image of my portfolio"></a>
+          <article class="my-work-child">
+            <h2>Future Work</h2>
+            <div class="MWS-container"  id="MWS-image-3">
+              <a class="MWS-img" href="https://discord.com/"> 
+                <img src="./Assets/Images/discord-logo.png" width=300 alt="image of my portfolio" class="MWS-image">
+                <div class="MWS-middle">
+                  <p class="MWS-text">Maybe some day I'll work on something like this.</p>
+                </div>
+              </a>
+            </div> 
+            
+            <div class="MWS-container" id="MWS-image-4">
+              <a class="MWS-img" href="https://store.steampowered.com/"> 
+                <img src="./Assets/Images/steam-logo.png" width=300 alt="image of my portfolio" class="MWS-image">
+                <div class="MWS-middle">
+                  <p class="MWS-text">Maybe some day I'll work on something like this.</p>
+                </div>
+              </a>
+            </div> 
   
-          <a href="https://www.rockstargames.com/"> <img src="./Assets/Images/rockstar-logo.png" width=200 alt="image of my portfolio"></a>
+            <div class="MWS-container" id="MWS-image-5">
+              <a href="https://www.xbox.com/en-us/"> 
+                <img src="./Assets/Images/xbox-logo.png" width=200 alt="image of my portfolio" class="MWS-image">
+                <div class="MWS-middle">
+                  <p class="MWS-text">Maybe some day I'll work on something like this.</p>
+                </div>
+              </a>
+            </div> 
   
-          <p>Some day I'll work on something like this.</p>
-        </article>
+            <div class="MWS-container" id="MWS-image-6">
+              <a href="https://www.playstation.com/en-us/"> 
+                <img src="./Assets/Images/playstation-logo.png" width=200 alt="image of my portfolio" class="MWS-image">
+                <div class="MWS-middle">
+                  <p class="MWS-text">Maybe some day I'll work on something like this.</p>
+                </div>
+              </a>
+            </div> 
+  
+            <div class="MWS-container" id="MWS-image-7">
+              <a href="https://www.rockstargames.com/"> 
+                <img src="./Assets/Images/rockstar-logo.png" width=200 alt="image of my portfolio" class="MWS-image">
+                <div class="MWS-middle">
+                  <p class="MWS-text">Maybe some day I'll work on something like this.</p>
+                </div>
+              </a>
+            </div> 
+          </article>
+        </div>
       </section>
-
 
       <!-- --------------------- My Resume --------------------- -->
       <section class="my-resume" id="my-resume-nav">
@@ -116,15 +157,16 @@
 
         <br>
 
-        <a href="https://www.linkedin.com/in/nhadea-lensky-567158210/"> <img src="./Assets/Images/LinkedIn_logo.png" width="40"></a>
+        <a href="https://www.linkedin.com/in/nhadea-lensky-567158210/"> <img src="./Assets/Images/LinkedIn_logo.png" width="40" class="MRS-logo"></a>
     
-        <a href="https://github.com/itsa-me-dea"> <img src="./Assets/Images/github-logo.png" width="40"></a>
+        <a href="https://github.com/itsa-me-dea"> <img src="./Assets/Images/github-logo.png" width="40" class="MRS-logo"></a>
       </section>
 
       <!-- --------------------- Contact me --------------------- -->
       <section class="contact-me" id="contact-me-nav">
         <form>
           <header>Contact Me</header>
+          <p>You can <a id="email-me" href = "mailto: wachadea@gmail.com">email me</a> or message me below. 👇</p>
           <p>
             <label for="username">Name:</label>
             <input class="text-input" id="username" type="text" placeholder="First Last" />
