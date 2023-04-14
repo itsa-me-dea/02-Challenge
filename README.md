@@ -24,7 +24,7 @@ In "Contact Me", selecting "email me" will open up an email prompt directed to m
 
 <!-- To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax: -->
 
-![My portfolio](./Assets/Images/02-advanced-css-homework-demo.gif)
+![My portfolio](./Assets/Images/screen-capture-gif.gif)
 
 ## Credits
 
