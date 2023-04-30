@@ -259,6 +259,12 @@
     opacity: 0.7;
   }
 
+  .pdf-btn {
+    padding-bottom: 30px;
+    vertical-align: middle;
+    color: #13293d;
+  }
+
   /* --------------------- CONTACT ME --------------------- */
   #email-me {
     color: #dd9460;
