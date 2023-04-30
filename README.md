@@ -10,7 +10,7 @@ I learned a great deal with this project. I was able to build on what I had lear
 
 ## Installation
 
-No installation is required. See the following link to access the website: https://itsa-me-dea.github.io/02-Challenge/
+No installation is required. See the following link to access the website: https://itsa-me-dea.github.io/02-Challenge-myPortfolio/
 
 ## Usage
 
