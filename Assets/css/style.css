@@ -255,13 +255,17 @@
     margin-right: 40px;
   }
 
+  .MRS-logo {
+    vertical-align: middle;
+  }
+
   .MRS-logo:hover {
     opacity: 0.7;
   }
 
   .pdf-btn {
-    padding-bottom: 30px;
-    vertical-align: middle;
+    /* padding-bottom: 30px;
+    vertical-align: middle; */
     color: #13293d;
   }
 
